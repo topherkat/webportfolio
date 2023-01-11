@@ -14,20 +14,40 @@
 
     <title>Web Developer Portfolio</title>
 </head>
-<body>
+<body class="bg-light px-0 px-lg-5">
 
-    <nav class="navbar sticky-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Sticky top</a>
-    </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-0 px-lg-5">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand " href="#">
+                <img src="images/MK_LOGO_VECTOR.png" alt="" width="36" height="30">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!-- Main -->
-      <div class="bg-light min-vh-100 px-3">
-        <div class="intro-card container-fluid d-flex flex-column align-items-center justify-content-center ">
+      <div class="bg-light min-vh-100 px-3 px-md-5 mx-0 mx-lg-5">
+        <div class="intro-card container-fluid d-flex flex-column flex-lg-row align-items-center justify-content-center min-vh-100">
 
-            <div class="col-12 order-2 py-4">
+            <div class="col-12 col-lg-6 order-2 order-lg-1 py-4">
                 <h1 class="bg-warning rounded-pill px-4 py-2 mb-3" id="hi">👋 Hi! I'm Miguel</h1>
                 <p class="lead">I am an aspiring full-stack web developer and freelance illustrator and designer</p>
 
-                <div class="py-4">
+                <div class="py-4 mt-0 mt-lg-5">
                     <h4>Tools I Use</h4>
 
                     <div>
@@ -52,43 +72,100 @@
                 </div>
             </div>
 
-            <div class="col-12 order-1 text-center">
-                <img src="images/me.jpg" width="400" class="img-fluid rounded-circle">
+            <div class="col-12 col-lg-6 order-1 text-center mt-5 pt-3 pt-lg-0 mt-lg-0 mb-3">
+                <img src="images/me.jpg" width="480" class="img-fluid rounded-pill p-2 border border-warning">
             </div>
         </div>
 
-        <div class="container-fluid">
-            <h2>My Projects</h2>
+        <div class="container-fluid min-vh-100" id="projects">
+            <h2 class="border sec-title border-warning rounded-pill px-4 py-2 mb-3 text-center">My Projects</h2>
 
             <div class="card-group">
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="card m-0 m-lg-3 border rounded">
+                  <img class="card-img-top" src="images/ss-rock-paper.png" alt="Card image cap">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-2"><a class="link-dark site-link" href="https://fe-mentor-rock-paper-scissors-deploy.vercel.app/" target="_blank">Rock Paper Scissors Web App</a></h5>
+                    <div class="mb-4">
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">react</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">redux-toolkit</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">sass/scss</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-2">bem</span>
+                    </div>
+                    <p class="card-text"><a href="https://github.com/Emvil-git/fe-mentor_rock-paper-scissors-deploy" target="_blank" class="link-dark text-muted">View on Github</a></p>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="card m-0 m-lg-3 border rounded">
+                  <img class="card-img-top" src="images/ss-tip-calcu.png" alt="Card image cap">
+                  <div class="card-bod p-4">
+                    <h5 class="card-title mb-2"><a class="link-dark site-link" href="https://fe-mentor-rock-paper-scissors-deploy.vercel.app/" target="_blank">Tip Calculator Web App</a></h5>
+                    <div class="mb-4">
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">react</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">redux</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">sass/scss</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">bem</span>
+                    </div>
+                    <p class="card-text"><a href="https://github.com/Emvil-git/fe-mentor__tip-calculator" target="_blank" class="link-dark text-muted">View on Github</a></p>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="card m-0 m-lg-3 border rounded">
+                  <img class="card-img-top" src="images/ss-notif-page.png" alt="Card image cap">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-2"><a class="link-dark site-link" href="https://fe-mentor-rock-paper-scissors-deploy.vercel.app/" target="_blank">Notification Component</a></h5>
+                    <div class="mb-4">
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">react</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">sass/scss</span>
+                        <span class="bg-dark py-1 text-light px-2 rounded-pill my-1">bem</span>
+                    </div>
+                    <p class="card-text"><a href="https://github.com/Emvil-git/fe-mentor_notifications-page" target="_blank" class="link-dark text-muted">View on Github</a></p>
                   </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="bg-dark text-center text-light p-5 mt-5" id="contact">
+            <h2 class="mb-5">Contact Me</h2>
+            <div></div>
+            <div class="bg-warning text-dark text-left offset-0 offset-md-2 offset-lg-3 col-12 col-md-8 col-lg-6 p-3 mb-5" id="form">
+                <div class="d-flex flex-column mb-3">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="name@example.com">
+                </div>
+                <div class="d-flex flex-column mb-3">
+                    <label for="name">Message</label>
+                    <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Send Email
+                  </button>
+
+                <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Message Successfully Sent
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
       </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
 </body>
 </html>

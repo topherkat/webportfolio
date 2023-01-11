@@ -1,6 +1,7 @@
 *{
     scroll-behavior: smooth !important;
     box-sizing: border-box;
+    scroll-padding-top: 72px;
 }
 
 body{
@@ -19,4 +20,20 @@ h1,h2,h3,h4,h5{
 .tools{
     max-width: fit-content;
     font-size: 24px;
+}
+
+.sec-title{
+    max-width: fit-content;
+}
+
+.site-link{
+    text-decoration: none !important;
+}
+
+#contact{
+    border-radius: 36px 36px 0 0;
+}
+
+#form{
+    text-align: left;
 }
