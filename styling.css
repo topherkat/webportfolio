@@ -1,0 +1,22 @@
+*{
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inconsolata', monospace !important;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Karla', sans-serif !important;
+}
+
+#hi{
+    /* font-size: 72px; */
+    max-width: fit-content;
+}
+
+.tools{
+    max-width: fit-content;
+    font-size: 24px;
+}
