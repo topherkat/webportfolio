@@ -12,6 +12,12 @@ h1,h2,h3,h4,h5{
     font-family: 'Karla', sans-serif !important;
 }
 
+#navbar{
+    background: #F8F9FA98 !important;
+    backdrop-filter: blur(18px);
+    border-bottom: 0.5px solid #F8F9FAa1 !important;
+}
+
 #hi{
     /* font-size: 72px; */
     max-width: fit-content;
